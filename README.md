@@ -1,2 +1,0 @@
-# weekendview
- Learning Vue.js
