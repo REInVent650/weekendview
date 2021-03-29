@@ -1,5 +1,5 @@
 <template>
-	<header>
+	
     <nav class="white z-depth-0">
     <div class="container">
           <div class="header">
@@ -15,8 +15,6 @@
       </ul>
     </div>
   </nav>
-</header>
-
 
 </template>
 
