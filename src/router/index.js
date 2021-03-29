@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "@/views/Home.vue";
+import PageNotFound from "@/components/PageNotFound"
 
 const routes = [
   {
@@ -16,6 +17,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+
+  { 
+    path: '/:pathMatch(.*)*', 
+    name: 'NotFound', 
+    component: PageNotFound },
+
 ];
 
 const router = createRouter({
