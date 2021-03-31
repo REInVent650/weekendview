@@ -1,5 +1,8 @@
 <template>
-	
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <nav class="white z-depth-0">
     <div class="container">
           <div class="header">
