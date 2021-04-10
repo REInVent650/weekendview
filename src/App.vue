@@ -5,22 +5,34 @@
   </div>-->
   <router-view />
 
-  <h1>header 1 </h1>
+  <h1 @click="toggleModal">header 1 </h1>
+  <div v-if="showModal">
+    <Modal :header="header" :theme="theme" @close="toggleModal"> 
+      <h6>form</h6>
+      <p>data</p>
+    </Modal>
+  </div>
 </template>
 
 <script>
+import Modal from "./components/Modal.vue";
+
 export default {
   name: "App",
+  components: { Modal },
   data() {
     return {
       title: "weekendview",
+      header: "heading",
+      theme: "sale",
+      showModal: false,
     }
   },
   methods: {
-    handleClick() {
-      console.log(this.$data.title)
+    toggleModal() {
+      this.showModal = !this.showModal;
     }
-  },
+  }
 }
 </script>
 <style>
