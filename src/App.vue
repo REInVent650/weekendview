@@ -1,13 +1,21 @@
 <template>
-<!--   <div id="nav">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+  />
+  <!--   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>-->
   <router-view />
 
-  <h1 @click="toggleModal">header 1 </h1>
+  <h1 @click="toggleModal">header 1</h1>
   <div v-if="showModal">
-    <Modal :header="header" :theme="theme" @close="toggleModal"> 
+    <Modal :header="header" :theme="theme" @close="toggleModal">
       <h6>form</h6>
       <p>data</p>
     </Modal>
@@ -26,14 +34,14 @@ export default {
       header: "heading",
       theme: "sale",
       showModal: false,
-    }
+    };
   },
   methods: {
     toggleModal() {
       this.showModal = !this.showModal;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style>
 #app {

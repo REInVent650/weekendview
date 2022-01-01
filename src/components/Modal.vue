@@ -12,10 +12,10 @@ export default {
   props: ["header", "theme"],
   methods: {
     closeModal() {
-      this.$emit("close")
-    }
-  }
-}
+      this.$emit("close");
+    },
+  },
+};
 </script>
 
 <style scoped>

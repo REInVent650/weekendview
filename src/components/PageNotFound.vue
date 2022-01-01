@@ -1,13 +1,9 @@
 <template>
-    <h1>Page Not Found</h1>
+  <h1>Page Not Found</h1>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
